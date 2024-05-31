@@ -1,0 +1,22 @@
+[[routes]]
+name = "home"
+page = "./src/Components/Home.svelte"
+controller = "./src/Controllers/HomeController.ts"
+
+[[routes.routes]]
+name = "about"
+page = "./src/Components/About.svelte"
+controller = "./src/Controllers/AboutController.ts"
+guard = "User"
+
+[[routes]]
+name = "login"
+page = "./src/Components/Login.svelte"
+controller = "./src/Controllers/LoginController.ts"
+guard = "Guest"
+
+[[routes.routes]]
+name = "confirm_email"
+page = "./src/Components/ConfirmEmail.svelte"
+controller = "./src/Controllers/ConfirmEmailController.ts"
+guard = "Guest"
